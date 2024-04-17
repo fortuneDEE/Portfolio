@@ -1,10 +1,19 @@
 import  { useState } from "react";
-import Fortune from "/favicon.png";
-import Fortune1 from "/favicon.png";
-import Fortune2 from "/favicon.png";
+import phasecurve from "/phasecurve.png";
+import phasecurve1 from '/phasecurve1.png'
+// import phasecurve2 from '/phasecurve2.png'
+// import phasecurve3 from "/phasecurve3.png";
+import redfox from "/redfox.png";
+import redfox1 from '/redfox1.png'
+// import redfox2 from '/redfox2.png'
+// import redfox3 from "/redfox3.png";
+import rocason from "/rocason.png";
+// import rocason1 from '/rocason1.png'
+// import rocason2 from "/rocason2.png";
+
 
 const Works = () => {
-    const [selectedCategory, setSelectedCategory] = useState("");
+    const [selectedCategory, setSelectedCategory] = useState("All");
 
     const handleCategorySelect = (category:any) => {
       setSelectedCategory(category);
@@ -13,18 +22,35 @@ const Works = () => {
     const renderDesigns = () => {
     // Replace this with your actual designs data
     const designs = [
-      { name: "Design 1", category: "Websites", image: Fortune },
-      { name: "Design 2", category: "Apps", image: Fortune1 },
-      { name: "Design 3", category: "Websites", image: Fortune2 },
+      { name: "Phasecurve Technologies website", images: [phasecurve, phasecurve1], category: "All" },
+      { name: "Redfox website", images: [redfox, redfox1], category: "Websites" },
+      { name: "Rocason website", images: [rocason], category: "Websites" },
+    //   {
+    //     name: "Laygoswatercrafts website",
+    //     images: [ Fortune],
+    //     category: "Apps",
+    //   },
       // Add more designs as needed
     ];
 
     const filteredDesigns = selectedCategory === 'All' ? designs : designs.filter(design => design.category === selectedCategory);
 
     return filteredDesigns.map((design, index) => (
-      <div key={index} className="flex items-center">
-        <img src={design.image} alt={design.name} className="flex items-center" />
-        <h3>{design.name}</h3>
+      <div key={index} className="flex flex-col items-center  justify-center">
+        <div className="flex mb-4 justify-center gap-4">
+          {design.images.map((image, i) => (
+            <div
+              key={i}
+              className="w-1/2 h-1/2 mb-4 rounded overflow-hidden shadow-lg"
+            >
+              <img
+                className="w-full"
+                src={image}
+                alt={`${design.name} ${i + 1}`}
+              />
+            </div>
+          ))}
+        </div>
         {/* <p>Category: {design.category}</p> */}
         {/* Render design details */}
       </div>
@@ -41,7 +67,7 @@ const Works = () => {
           </p>
         </div>
         <div>
-          <div className="flex justify-center">
+          <div className="flex mb-7 justify-center">
             <ul className="flex items-center bg-gray-300 py-2 px-5 rounded-xl space-x-2">
               <a
                 className={`cursor-pointer p-2 rounded-xl ${

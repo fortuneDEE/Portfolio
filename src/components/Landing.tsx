@@ -24,22 +24,22 @@ const Landing = () => {
             <button className="bg-blue-500 text-white px-6 py-3 rounded-lg font-bold text-lg hover:bg-blue-600 transition duration-300 ease-in-out">
               Download CV
             </button>
-            <div className="flex mt-4 ml-5 lg:mt-8">
+            <div className="flex items-center justify-center ml-5">
               <a
                 href="https://twitter.com/fortune_ellah"
                 target="_blank"
                 rel="noreferrer"
-                className="text-blue-500 size-5 hover:text-blue-600 mr-4"
+                className="text-blue-500 hover:text-blue-600 "
               >
-                <AiFillTwitterCircle />
+                <AiFillTwitterCircle size={24} />
               </a>
               <a
                 href="https://github.com/fortuneDEE"
                 target="_blank"
                 rel="noreferrer"
-                className="text-blue-500 hover:text-blue-600 mr-4"
+                className="text-blue-500 hover:text-blue-600"
               >
-                <AiFillGithub />
+                <AiFillGithub size={24} />
               </a>
               <a
                 href="https://www.linkedin.com/in/fortune-ellah/"
@@ -47,21 +47,21 @@ const Landing = () => {
                 rel="noreferrer"
                 className="text-blue-500 hover:text-blue-600"
               >
-                <AiFillLinkedin />
+                <AiFillLinkedin size={24} />
               </a>
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2 mt-8 lg:mt-0">
+        <div className="lg:w-1/2 flex justify-end mt-8 lg:mt-0">
           <img
             src={Fortune}
             alt="fortune ellah"
-            className="w-full rounded-lg bg-blue-300 shadow-lg"
+            className="w-fit rounded-lg bg-blue-300 shadow-lg"
           />
         </div>
       </div>
       <div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 mt-11 gap-8 text-center">
           <div className=" p-6 rounded-lg flex items-center space-x-2">
             <h2 className="text-4xl font-bold">14</h2>
             <p className="text-lg">
