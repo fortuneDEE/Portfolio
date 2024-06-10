@@ -9,16 +9,16 @@ const [isOpen, setIsOpen] = useState(false);
   };
 
   return (
-    <nav className="flex w-full justify-between items-center max-w-[1990px] py-6 px-6 md:px-12 lg:px-24">
+    <nav className="flex w-full justify-between items-center max-w-[1440px] py-6 px-6 md:px-12 lg:px-24">
       <div className="flex justify-between items-center">
-        <div className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900 font-bold font-sans mr-6 md:text-xl">
+        <div className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900 font-bold font-sans mr-6 md:text-xxl lg:text-4xl">
           ChikaDev
         </div>
         <div className="text-sm mr-6 hidden lg:block md:text-sx">
           ellfortune3@gmail.com
         </div>
       </div>
-      <button className="bg-gradient-to-r from-blue-500  text-white font-bold py-2 px-6 absolute right-20 md:hidden rounded-full">
+      <button className="bg-gradient-to-r from-blue-500 to-gray-900 text-white font-bold py-2 px-6 absolute right-20 md:hidden rounded-full">
         Hire Me!
       </button>
       <div className="md:hidden">

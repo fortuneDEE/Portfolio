@@ -4,7 +4,7 @@ import { SlLocationPin } from "react-icons/sl";
 
 const ContactSection: React.FC = () => {
   return (
-    <section className="bg-gray-200 w-full font-sans max-w-[1990px] p-8 md:p-12 lg:p-16 xl:p-20">
+    <section className="bg-gray-200 w-full font-sans max-w-[1440px] lg:mx-auto p-8 md:p-12 lg:p-16 xl:p-20">
       <div className="flex flex-col md:flex-row-reverse items-center">
         <div className="flex flex-col w-full space-y-8 md:ml-16 lg:w-1/2 mb-5">
           <div className="flex items-center space-x-4">

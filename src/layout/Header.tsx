@@ -42,7 +42,7 @@ const Header = () => {
 
   return (
     <nav
-      className={`flex fixed w-full justify-between items-center bg-gray-900 max-w-[1990px] text-white shadow-blue-500 shadow-lg py-6 px-6 md:px-12 lg:px-24 transition-all duration-100 ${
+      className={`flex fixed w-full justify-between items-center bg-gray-900 max-w-[1440px] mx-auto text-white shadow-blue-500 shadow-lg py-6 px-6 md:px-12 lg:px-24 transition-all duration-100 ${
         isScrolled ? "opacity-100" : "opacity-0"
       }`}
     >
