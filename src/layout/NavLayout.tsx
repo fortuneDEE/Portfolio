@@ -9,23 +9,23 @@ const [isOpen, setIsOpen] = useState(false);
   };
 
   return (
-    <nav className="flex w-full justify-between items-center max-w-[1440px] py-6 px-6 md:px-12 lg:px-24">
+    <nav className="flex w-full justify-between items-center max-w-[1440px] mx-auto text-white py-6 px-6 sm:px-12 lg:px-24">
       <div className="flex justify-between items-center">
-        <div className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900 font-bold font-sans mr-6 md:text-xxl lg:text-4xl">
+        <div className="text-2xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900 font-sans mr-6 md:text-xl">
           ChikaDev
         </div>
         <div className="text-sm mr-6 hidden lg:block md:text-sx">
           ellfortune3@gmail.com
         </div>
       </div>
-      <button className="bg-gradient-to-r from-blue-500 to-gray-900 text-white font-bold py-2 px-6 absolute right-20 md:hidden rounded-full">
+      <button className="bg-gradient-to-r from-blue-500 to-gray-900 text-white font-bold mr-4 py-2 px-6 absolute right-20 md:hidden rounded-full">
         Hire Me!
       </button>
       <div className="md:hidden">
         {isOpen ? (
           <button
             onClick={toggleMenu}
-            className="block text-gray-500 hover:text-white focus:text-white focus:outline-none"
+            className="block text-blue-500 hover:text-blue-500 focus:text-white focus:outline-none"
           >
             <svg className="h-8 w-8 fill-current" viewBox="0 0 24 24">
               <path
@@ -38,7 +38,7 @@ const [isOpen, setIsOpen] = useState(false);
         ) : (
           <button
             onClick={toggleMenu}
-            className="block text-gray-500 hover:text-white focus:text-white focus:outline-none"
+            className="block text-blue-500 hover:text-blue-500 focus:text-white focus:outline-none"
           >
             <svg className="h-8 w-8 fill-current" viewBox="0 0 24 24">
               <path
@@ -51,7 +51,7 @@ const [isOpen, setIsOpen] = useState(false);
         )}
       </div>
       <div
-        className={`md:flex flex-col md:flex-row md:items-center md:space-x-4 ${
+        className={`md:flex flex-col text-gray-700 md:flex-row md:items-center md:space-x-4 ${
           isOpen ? "block" : "hidden"
         }`}
       >
@@ -75,7 +75,7 @@ const [isOpen, setIsOpen] = useState(false);
             <a href={""}>Contact</a>
           </li>
         </ul>
-        <button className="bg-gradient-to-r from-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 hidden md:block rounded-full">
+        <button className="bg-gradient-to-r from-blue-500 to-gray-900 hover:bg-blue-600 text-white font-bold py-2 px-6 hidden md:block rounded-full">
           Hire Me!
         </button>
       </div>

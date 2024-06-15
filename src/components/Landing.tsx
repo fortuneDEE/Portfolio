@@ -25,7 +25,7 @@ const Landing = () => {
                 that connect billions of people
               </p>
               <div className="flex items-center">
-                <button className="border-blue-500 border-2 flex items-center text-blue-500 px-6 py-3 rounded-full font-bold text-lg hover:bg-blue-500 hover:text-white transform hover:scale-110 transition duration-300 ease-in-out">
+                <button className="border-blue-500 mr-6 border-2 flex items-center text-blue-500 px-6 py-3 rounded-full font-bold text-lg hover:bg-blue-500 hover:text-white transform hover:scale-110 transition duration-300 ease-in-out">
                   Download CV
                   <FiDownload className="mx-2" />
                 </button>

@@ -61,7 +61,7 @@ const Works = () => {
 }
   return (
     <section className="w-full h-full mx-auto max-w-[1440px] font-sans p-8 sm:px-12 lg:px-24">
-      <div className="container flex flex-col ">
+      <div className="container flex flex-col justify-evenly">
         <div className="text-center mb-10">
           <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-500">
             My Quality Works

@@ -15,8 +15,8 @@ function App() {
 
   return (
     <>
-    <NavLayout/>
     {/* <Header/> */}
+    <NavLayout/>
     <Landing/>
     <Services/>
     <Works/>
