@@ -4,7 +4,7 @@ import phasecurve1 from '/phasecurve1.png'
 // import phasecurve2 from '/phasecurve2.png'
 // import phasecurve3 from "/phasecurve3.png";
 import redfox from "/redfox.png";
-import redfox1 from '/redfox1.png'
+// import redfox1 from '/redfox1.png'
 // import redfox2 from '/redfox2.png'
 // import redfox3 from "/redfox3.png";
 import rocason from "/rocason.png";
