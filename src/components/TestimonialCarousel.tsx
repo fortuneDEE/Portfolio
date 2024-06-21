@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 interface Testimonial {
   id: number;
   name: string;
+  role: string;
   comment: string;
 }
 
@@ -14,22 +15,26 @@ const TestimonialCarousel: React.FC = () => {
     {
       id: 1,
       name: "John Doe",
+      role: "Senior software dev",
       comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
       id: 2,
       name: "Jane Smith",
+      role: "Senior software dev",
       comment:
         "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
       id: 3,
       name: "John Doe",
+      role: "Senior software dev",
       comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
       id: 4,
       name: "Jane Smith",
+      role: "Senior software dev",
       comment:
         "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
@@ -40,21 +45,31 @@ const TestimonialCarousel: React.FC = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
-    arrows: true,
+    autoplaySpeed: 3000,
+    arrows: false,
   };
 
   return (
-    <div className="max-w-[520px] mx-auto">
+    <div className="max-w-[500px]">
       <Slider {...settings}>
         {testimonials.map((testimonial) => (
-          <div key={testimonial.id} className="p-4">
-            <div className="bg-white h-[250px] rounded-lg shadow-lg p-6">
-              <p className="text-lg text-gray-800">{testimonial.comment}</p>
-              <p className="mt-4 text-gray-600">- {testimonial.name}</p>
+          <div
+            key={testimonial.id}
+            className="p-4 flex flex-col items-start justify-center"
+          >
+            <div className="bg-white w-full h-[300px] rounded-lg shadow-lg p-6 flex flex-col ">
+              <p className="text-lg text-gray-600 mb-12 leading-tight">
+                {testimonial.comment}
+              </p>
+              <div className="flex flex-col items-end">
+                <p className="mb-2 justify-endtext-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-500">
+                  {testimonial.name}
+                </p>
+                <p className="text-sm text-gray-600">{testimonial.role}</p>
+              </div>
             </div>
           </div>
         ))}

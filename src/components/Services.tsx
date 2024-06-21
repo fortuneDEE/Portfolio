@@ -3,7 +3,7 @@ import { GoArrowDownRight } from "react-icons/go";
 
 const Services = () => {
   return (
-    <section className="bg-gray-100 w-full h-full max-w-[1440px] font-sans py-6 px-6 sm:px-12 lg:px-24">
+    <section className="bg-blue-50 w-full h-full max-w-[1440px] font-sans py-6 px-6 sm:px-12 lg:px-24">
       <div className="container flex flex-col items-center mx-auto px-6 mb-14">
         <div className="text-center my-10">
           <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-500">

@@ -2,14 +2,14 @@ import { IoIosSchool } from "react-icons/io";
 
 const Resume = () => {
   return (
-    <section className="w-full h-full max-w-[1440px] bg-gray-200 font-sans mx-auto py-12 px-6 md:px-12 lg:px-24">
-      <div className="flex flex-col md:flex-row justify-evenly">
-        <div className="">
-          <h1 className="text-4xl lg:text-6xl font-bold flex items-center leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900 mb-12 lg:mb-8">
+    <section className="w-full h-full max-w-[1440px] bg-blue-50 font-sans py-12 px-6 md:px-12 lg:px-24">
+      <div className="flex flex-col md:flex-row gap-6 sm:px-16 md:px-0 mx-auto">
+        <div className="mb-8 w-full">
+          <h1 className="text-3xl lg:text-4xl font-bold flex items-center leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900 mb-12 lg:mb-8">
             <IoIosSchool
               // color="inherit"
               size={35}
-              className="mr-2 text-blue-500"
+              className="mr-3 text-blue-500"
             />
             My Experience
           </h1>
@@ -37,12 +37,12 @@ const Resume = () => {
             </div>
           </div>
         </div>
-        <div className="">
-          <h1 className="text-4xl lg:text-6xl font-bold flex items-center leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900 my-12 sm:mt-0 lg:mb-8">
+        <div className="w-full">
+          <h1 className="text-3xl lg:text-4xl font-bold flex items-center leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900 my-12 sm:mt-0 lg:mb-8">
             <IoIosSchool
               // color="inherit"
               size={35}
-              className="mr-2 text-blue-500"
+              className="mr-3 text-blue-500"
             />
             My Education
           </h1>

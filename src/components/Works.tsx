@@ -23,7 +23,7 @@ const Works = () => {
     // Replace this with your actual designs data
     const designs = [
       { name: "Phasecurve Technologies website", images: [phasecurve, phasecurve1], category: "All" },
-      { name: "Redfox website", images: [redfox, redfox1], category: "Websites" },
+      { name: "Redfox website", images: [redfox], category: "Websites" },
       { name: "Rocason website", images: [rocason], category: "Apps" },
     //   {
     //     name: "Laygoswatercrafts website",
@@ -36,18 +36,12 @@ const Works = () => {
     const filteredDesigns = selectedCategory === 'All' ? designs : designs.filter(design => design.category === selectedCategory);
 
     return filteredDesigns.map((design, index) => (
-      <div
-        key={index}
-        className="flex flex-col items-center justify-center"
-      >
-        <div className="flex flex-col md:flex-row items-center  justify-center gap-4">
+      <div key={index} className="flex flex-col items-center justify-center">
+        <div className="flex flex-col md:flex-row items-center  justify-center gap-4 md:gap-7">
           {design.images.map((image, i) => (
-            <div
-              key={i}
-              className="rounded-2xl w-[500px] h-[400px] md:w-[400px] md:h-[300px] cursor-pointer "
-            >
+            <div key={i}>
               <img
-                className="w-full object-cover"
+                className="rounded-xl border-2 w-[500px] h-[350px] mb-4 md:w-[350px] md:h-[250px] md:mb-7"
                 src={image}
                 alt={`${design.name} ${i + 1}`}
               />
@@ -72,7 +66,7 @@ const Works = () => {
           </p>
         </div>
         <div>
-          <div className="flex mb-7 justify-center">
+          <div className="flex mb-9 justify-center">
             <ul className="flex items-center bg-gray-100 px-3 rounded-xl space-x-2">
               <a
                 className={`cursor-pointer p-2 rounded-xl text-blue-500 ${
@@ -101,7 +95,7 @@ const Works = () => {
               </a>
             </ul>
           </div>
-          <div className="designs-container">{renderDesigns()}</div>
+          <div className="">{renderDesigns()}</div>
         </div>
       </div>
     </section>
