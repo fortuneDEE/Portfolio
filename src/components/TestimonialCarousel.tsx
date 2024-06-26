@@ -44,28 +44,36 @@ const TestimonialCarousel: React.FC = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
-    slidesToShow: 1,
+    speed: 300,
+    slidesToShow: 2, // Default number of slides to show
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: false,
+    responsive: [
+      {
+        breakpoint: 640, // For screens smaller than 640px
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
   };
 
   return (
-    <div className="max-w-[500px]">
+    <div className="max-w-[500px] mx-auto">
       <Slider {...settings}>
         {testimonials.map((testimonial) => (
           <div
             key={testimonial.id}
-            className="p-4 flex flex-col items-start justify-center"
+            className="p-4 flex flex-col items-start justify-center sm:gap-6"
           >
-            <div className="bg-white w-full h-[300px] rounded-lg shadow-lg p-6 flex flex-col ">
+            <div className="bg-white w-full h-[300px] rounded-lg shadow-lg p-6 flex flex-col">
               <p className="text-lg text-gray-600 mb-12 leading-tight">
                 {testimonial.comment}
               </p>
-              <div className="flex flex-col items-end">
-                <p className="mb-2 justify-endtext-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-500">
+              <div className="flex flex-col justify-end">
+                <p className="mb-2 text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-500">
                   {testimonial.name}
                 </p>
                 <p className="text-sm text-gray-600">{testimonial.role}</p>

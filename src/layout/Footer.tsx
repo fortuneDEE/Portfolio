@@ -1,10 +1,12 @@
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col font-sans items-center bg-gray-900 max-w-[1990px] w-full h-[200px] text-white p-6 md:px-12 lg:px-24">
-      <div className="text-xl font-bold mb-5">ChikaDev</div>
-      <div>
-        <ul className="flex space-x-4 mb-5">
+    <footer className="flex w-full h-[30vh] flex-col items-center max-w-[1440px] justify-center bg-blue-950 mx-auto pt-10 px-6 sm:px-12 lg:px-24">
+      <div className="text-4xl font-bold text-transparent bg-clip-text bg-blue-500 mb-8">
+        ChikaDev
+      </div>
+      <div className="text-white font-bold">
+        <ul className="flex space-x-8 mb-5">
           <a href={""}>
             <li>Services</li>
           </a>
@@ -26,7 +28,9 @@ const Footer = () => {
         </ul>
       </div>
       <div>
-        <p className="text-blue-500">&copy; 2024 All rights reserved by Ellah Fortune</p>
+        <p className="text-blue-500 text-sm">
+          &copy; 2024 All rights reserved by <b>Ellah Fortune</b>
+        </p>
       </div>
     </footer>
   );
