@@ -11,14 +11,14 @@ const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="flex w-full justify-between items-center max-w-[1440px] mx-auto text-white py-6 px-6 sm:px-12 lg:px-24">
       <div className="flex justify-between items-center">
-        <div className="text-2xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900 font-sans mr-6 md:text-xl">
+        <div className="text-4xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900 font-sans mr-6 md:text-xl">
           ChikaDev
         </div>
         <div className="text-sm mr-6 hidden lg:block md:text-sx">
           ellfortune3@gmail.com
         </div>
       </div>
-      <button className="bg-gradient-to-r from-blue-500 to-gray-900 text-white font-bold mr-4 py-2 px-6 absolute right-20 md:hidden rounded-full">
+      <button className="bg-gradient-to-r from-blue-500 to-gray-900 text-white font-bold mr-4 py-4 px-8 absolute right-20 md:hidden rounded-full">
         Hire Me!
       </button>
       <div className="md:hidden">
@@ -75,7 +75,7 @@ const [isOpen, setIsOpen] = useState(false);
             <a href={""}>Contact</a>
           </li>
         </ul>
-        <button className="bg-gradient-to-r from-blue-500 to-gray-900 hover:bg-blue-600 text-white font-bold py-2 px-6 hidden md:block rounded-full">
+        <button className="bg-gradient-to-r from-blue-500 to-gray-900 hover:bg-blue-600 text-white font-bold py-4 px-8 hidden md:block rounded-full">
           Hire Me!
         </button>
       </div>

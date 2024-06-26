@@ -26,14 +26,14 @@ const Skills = () => {
               <FaReact size={45} />
               <h3 className="mt-4 font-bold">75%</h3>
             </div>
-            <p className="text-blue-500 mt-2 mb-6">GSAP</p>
+            <p className="text-blue-500 mt-2 mb-6">JavaScript</p>
           </div>
           <div className="flex flex-col justify-center items-center">
             <div className="rounded-2xl p-6 w-[150px] h-full flex flex-col items-center bg-blue-200">
               <FaReact size={45} />
               <h3 className="mt-4 font-bold">75%</h3>
             </div>
-            <p className="text-blue-500 mt-2 mb-6">Figma</p>
+            <p className="text-blue-500 mt-2 mb-6">WordPress(PHP)</p>
           </div>
           <div className="flex flex-col justify-center items-center">
             <div className="rounded-2xl p-6 w-[150px] h-full flex flex-col items-center bg-blue-200">

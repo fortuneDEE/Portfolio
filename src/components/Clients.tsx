@@ -2,7 +2,7 @@ import TestimonialCarousel from "./TestimonialCarousel";
 
 const Clients = () => {
   return (
-    <section className="w-full max-w-[1440px] py-20 bg-blue-50">
+    <section className="w-full max-w-[1440px] py-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-start lg:flex-row">
           <div>

@@ -47,7 +47,7 @@ const Header = () => {
       }`}
     >
       <div className="flex justify-between items-center">
-        <div className="text-2xl font-bold font-sans mr-6 md:text-xl">
+        <div className="text-4xl font-bold font-sans mr-6 md:text-xl">
           ChikaDev
         </div>
         <div className="text-sm mr-6 hidden lg:block md:text-sx">
