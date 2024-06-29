@@ -25,7 +25,7 @@ const Landing = () => {
                 that connect billions of people
               </p>
               <div className="flex md:items-start md:flex-col">
-                <button className="border-blue-500 mr-6 md:mr-0 md:mb-4 border-2 flex items-center text-blue-500 px-6 py-3 rounded-full font-bold text-lg md:text-sm md:whitespace-nowrap hover:bg-blue-500 hover:text-white transform hover:scale-110 transition duration-300 ease-in-out">
+                <button className="border-blue-500 mr-6 md:mr-0 md:mb-4 border-2 flex items-center text-blue-500 px-6 py-3 rounded-full font-bold text-base md:text-sm md:whitespace-nowrap hover:bg-blue-500 hover:text-white transform hover:scale-110 transition duration-300 ease-in-out">
                   Download CV
                   <FiDownload className="mx-2" />
                 </button>
@@ -84,7 +84,7 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 my-14 gap-8 text-center max-w-[] mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-4 my-14 gap-8 text-center max-w-[] mx-auto">
         <div className=" p-6 text-blue-500 rounded-lg flex flex-col xs:flex-row items-center space-x-4">
           <h2 className="text-5xl text-blue-500 font-bold leading-10">14</h2>
           <p className="text-base text-left leading-6">

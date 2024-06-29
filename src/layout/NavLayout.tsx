@@ -9,16 +9,16 @@ const [isOpen, setIsOpen] = useState(false);
   };
 
   return (
-    <nav className="flex w-full justify-between items-center max-w-[1440px] mx-auto text-white py-6 px-6 sm:px-12 lg:px-24">
-      <div className="flex justify-between items-center">
-        <div className="text-4xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900 font-sans mr-6 md:text-xl">
+    <nav className="flex justify-between w-full space-x-3 items-center max-w-[1440px] text-white py-6 px-6 sm:px-12 lg:px-24">
+      <div className="flex items-center">
+        <div className="text-3xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900 font-sans mr-6 md:text-xl">
           ChikaDev
         </div>
         <div className="text-sm mr-6 hidden lg:block md:text-sx">
           ellfortune3@gmail.com
         </div>
       </div>
-      <button className="bg-gradient-to-r from-blue-500 to-gray-900 text-white font-bold mr-4 py-4 px-8 absolute right-20 md:hidden rounded-full">
+      <button className="bg-gradient-to-r from-blue-500 to-gray-900  text-white font-bold py-3 px-9 md:hidden rounded-full">
         Hire Me!
       </button>
       <div className="md:hidden">
@@ -27,7 +27,7 @@ const [isOpen, setIsOpen] = useState(false);
             onClick={toggleMenu}
             className="block text-blue-500 hover:text-blue-500 focus:text-white focus:outline-none"
           >
-            <svg className="h-8 w-8 fill-current" viewBox="0 0 24 24">
+            <svg className="h-12 w-12 fill-current" viewBox="0 0 24 24">
               <path
                 fillRule="evenodd"
                 clipRule="evenodd"
@@ -40,7 +40,7 @@ const [isOpen, setIsOpen] = useState(false);
             onClick={toggleMenu}
             className="block text-blue-500 hover:text-blue-500 focus:text-white focus:outline-none"
           >
-            <svg className="h-8 w-8 fill-current" viewBox="0 0 24 24">
+            <svg className="h-12 w-12 fill-current" viewBox="0 0 24 24">
               <path
                 fillRule="evenodd"
                 clipRule="evenodd"
