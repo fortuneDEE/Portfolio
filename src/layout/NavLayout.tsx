@@ -1,33 +1,73 @@
 import { useState } from "react";
 
 const NavLayout = () => {
-const [isOpen, setIsOpen] = useState(false);
-
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <nav className="flex justify-between w-full space-x-3 items-center max-w-[1440px] text-white py-6 px-6 sm:px-12 lg:px-24">
-      <div className="flex items-center">
-        <div className="text-3xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900 font-sans mr-6 md:text-xl">
+    <nav className="flex justify-between items-center w-full px-6 py-6 sm:px-12 lg:px-24 text-white relative">
+      <div className={`flex items-center space-x-4`}>
+        <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900">
           ChikaDev
         </div>
-        <div className="text-sm mr-6 hidden lg:block md:text-sx">
+        <div className="text-sm text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900 hidden md:block">
           ellfortune3@gmail.com
         </div>
       </div>
-      <button className="bg-gradient-to-r from-blue-500 to-gray-900  text-white font-bold py-3 px-9 md:hidden rounded-full">
-        Hire Me!
-      </button>
-      <div className="md:hidden">
-        {isOpen ? (
+      <div className="hidden lg:flex items-center space-x-4">
+        <ul className="flex space-x-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900">
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Works</a>
+          </li>
+          <li>
+            <a href="#">Resume</a>
+          </li>
+          <li>
+            <a href="#">Skills</a>
+          </li>
+          <li>
+            <a href="#">Testimonials</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <button className="bg-gradient-to-r from-blue-500 to-gray-900 text-white font-bold py-3 px-9 rounded-full">
+          Hire Me!
+        </button>
+      </div>
+      <div className="lg:hidden flex items-center space-x-4 text-blue-500">
+        {!isOpen && (
+          <>
+            <button className="bg-gradient-to-r from-blue-500 to-gray-900 text-white font-bold py-3 px-9 rounded-full">
+              Hire Me!
+            </button>
+            <button
+              onClick={toggleMenu}
+              className="text-blue-500 focus:outline-none"
+            >
+              <svg className="h-8 w-8 text-blue-500" viewBox="0 0 24 24">
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm16 4H4v2h16v-2z"
+                />
+              </svg>
+            </button>
+          </>
+        )}
+        {isOpen && (
           <button
             onClick={toggleMenu}
-            className="block text-blue-500 hover:text-blue-500 focus:text-white focus:outline-none"
+            className="text-blue-500 focus:outline-none"
           >
-            <svg className="h-12 w-12 fill-current" viewBox="0 0 24 24">
+            <svg className="h-8 w-8 text-blue-500" viewBox="0 0 24 24">
               <path
                 fillRule="evenodd"
                 clipRule="evenodd"
@@ -35,52 +75,39 @@ const [isOpen, setIsOpen] = useState(false);
               />
             </svg>
           </button>
-        ) : (
-          <button
-            onClick={toggleMenu}
-            className="block text-blue-500 hover:text-blue-500 focus:text-white focus:outline-none"
-          >
-            <svg className="h-12 w-12 fill-current" viewBox="0 0 24 24">
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm16 4H4v2h16v-2z"
-              />
-            </svg>
-          </button>
         )}
       </div>
       <div
-        className={`md:flex flex-col text-gray-700 md:flex-row md:items-center md:space-x-4 ${
+        className={`${
           isOpen ? "block" : "hidden"
-        }`}
+        } lg:hidden flex flex-col items-center space-y-4 absolute top-20 left-0 w-full bg-white text-black p-6`}
       >
-        <ul className="flex flex-col text-base md:flex-row space-y-4 md:space-y-0 md:space-x-4 md:text-sm">
+        <ul className="flex flex-col space-y-4 w-full">
           <li>
-            <a href={""}>Services</a>
+            <a href="#">Services</a>
           </li>
           <li>
-            <a href={""}>Works</a>
+            <a href="#">Works</a>
           </li>
           <li>
-            <a href={""}>Resume</a>
+            <a href="#">Resume</a>
           </li>
           <li>
-            <a href={""}>Skills</a>
+            <a href="#">Skills</a>
           </li>
           <li>
-            <a href={""}>Testimonials</a>
+            <a href="#">Testimonials</a>
           </li>
           <li>
-            <a href={""}>Contact</a>
+            <a href="#">Contact</a>
           </li>
         </ul>
-        <button className="bg-gradient-to-r from-blue-500 to-gray-900 hover:bg-blue-600 text-white font-bold py-4 px-8 hidden md:block rounded-full">
+        <button className="bg-gradient-to-r from-blue-500 to-gray-900 text-white font-bold py-3 px-9 rounded-full">
           Hire Me!
         </button>
       </div>
     </nav>
   );
-}
+};
 
-export default NavLayout
+export default NavLayout;
