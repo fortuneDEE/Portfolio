@@ -8,17 +8,17 @@ const NavLayout = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center w-full px-6 py-6 sm:px-12 lg:px-24 text-white relative">
-      <div className={`flex items-center space-x-4`}>
+    <nav className="flex justify-between items-center w-full max-w-[1440px] px-5 py-6 xs:px-10 sm:px-16 md:px-20 lg:px-28 md:py-10 mx-auto text-white relative">
+      <div className="flex items-center space-x-2">
         <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900">
           ChikaDev
         </div>
-        <div className="text-sm text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900 hidden md:block">
+        <div className="text-sm text-gray-600 hidden">
           ellfortune3@gmail.com
         </div>
       </div>
-      <div className="hidden lg:flex items-center space-x-4">
-        <ul className="flex space-x-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900">
+      <div className="hidden lg:flex items-center space-x-6">
+        <ul className="flex space-x-6 text-gray-600">
           <li>
             <a href="#">Services</a>
           </li>
@@ -38,44 +38,23 @@ const NavLayout = () => {
             <a href="#">Contact</a>
           </li>
         </ul>
-        <button className="bg-gradient-to-r from-blue-500 to-gray-900 text-white font-bold py-3 px-9 rounded-full">
+        <button className="bg-gradient-to-r from-blue-500 to-gray-900 text-white font-bold py-2 px-6 rounded-full whitespace-nowrap">
           Hire Me!
         </button>
       </div>
       <div className="lg:hidden flex items-center space-x-4 text-blue-500">
-        {!isOpen && (
-          <>
-            <button className="bg-gradient-to-r from-blue-500 to-gray-900 text-white font-bold py-3 px-9 rounded-full">
-              Hire Me!
-            </button>
-            <button
-              onClick={toggleMenu}
-              className="text-blue-500 focus:outline-none"
-            >
-              <svg className="h-8 w-8 text-blue-500" viewBox="0 0 24 24">
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm16 4H4v2h16v-2z"
-                />
-              </svg>
-            </button>
-          </>
-        )}
-        {isOpen && (
-          <button
-            onClick={toggleMenu}
-            className="text-blue-500 focus:outline-none"
-          >
-            <svg className="h-8 w-8 text-blue-500" viewBox="0 0 24 24">
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M19.7 18.3a1 1 0 0 1-1.4 1.4l-6-6a1 1 0 0 1 0-1.4l6-6a1 1 0 1 1 1.4 1.4L14.42 12l5.3 5.3z"
-              />
-            </svg>
-          </button>
-        )}
+        <button className="bg-gradient-to-r from-blue-500 to-gray-900 text-white font-bold py-2 px-6 rounded-full whitespace-nowrap">
+          Hire Me!
+        </button>
+        <button onClick={toggleMenu} className="focus:outline-none">
+          <svg className="h-8 w-8" viewBox="0 0 24 24">
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm16 4H4v2h16v-2z"
+            />
+          </svg>
+        </button>
       </div>
       <div
         className={`${
@@ -102,7 +81,7 @@ const NavLayout = () => {
             <a href="#">Contact</a>
           </li>
         </ul>
-        <button className="bg-gradient-to-r from-blue-500 to-gray-900 text-white font-bold py-3 px-9 rounded-full">
+        <button className="bg-gradient-to-r from-blue-500 to-gray-900 text-white font-bold py-2 px-6 rounded-full whitespace-nowrap">
           Hire Me!
         </button>
       </div>
