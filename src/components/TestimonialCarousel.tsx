@@ -68,15 +68,15 @@ const TestimonialCarousel: React.FC = () => {
             key={testimonial.id}
             className="p-4 flex flex-col items-start justify-center sm:gap-6"
           >
-            <div className="bg-white w-full h-[300px] rounded-lg shadow-lg p-6 flex flex-col">
-              <p className="text-lg text-gray-600 mb-12 leading-tight">
+            <div className="bg-gradient-to-r from-blue-500 to-gray-500 text-white w-full h-[300px] rounded-lg shadow-lg p-6 flex flex-col">
+              <p className="text-lg  mb-12 leading-tight">
                 {testimonial.comment}
               </p>
               <div className="flex flex-col justify-end">
-                <p className="mb-2 text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-500">
+                <p className="mb-2 text-xl font-bold  ">
                   {testimonial.name}
                 </p>
-                <p className="text-sm text-gray-600">{testimonial.role}</p>
+                <p className="text-sm ">{testimonial.role}</p>
               </div>
             </div>
           </div>

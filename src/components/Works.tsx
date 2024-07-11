@@ -1,64 +1,86 @@
 import  { useState } from "react";
 import phasecurve from "/phasecurve.png";
 import phasecurve1 from '/phasecurve1.png'
-// import phasecurve2 from '/phasecurve2.png'
-// import phasecurve3 from "/phasecurve3.png";
 import redfox from "/redfox.png";
-// import redfox1 from '/redfox1.png'
-// import redfox2 from '/redfox2.png'
-// import redfox3 from "/redfox3.png";
-import rocason from "/rocason.png";
-// import rocason1 from '/rocason1.png'
-// import rocason2 from "/rocason2.png";
+import { MdArrowOutward } from "react-icons/md";
 
 
 const Works = () => {
-    const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
-    const handleCategorySelect = (category:any) => {
-      setSelectedCategory(category);
-    };
+  const handleCategorySelect = (category: string) => {
+    setSelectedCategory(category);
+  };
 
-    const renderDesigns = () => {
-    // Replace this with your actual designs data
+  const renderDesigns = () => {
     const designs = [
-      { name: "Phasecurve Technologies website", images: [phasecurve, phasecurve1], category: "All" },
-      { name: "Redfox website", images: [redfox], category: "Websites" },
-      { name: "Rocason website", images: [rocason], category: "Apps" },
-    //   {
-    //     name: "Laygoswatercrafts website",
-    //     images: [ Fortune],
-    //     category: "Apps",
-    //   },
-      // Add more designs as needed
+      {
+        name: "Phasecurve Technologies website",
+        description: "A technology website showcasing services and products.",
+        link: "https://phasecurve.com",
+        images: [phasecurve, phasecurve1],
+        category: "All",
+      },
+      {
+        name: "Redfox website",
+        description: "A website for Redfox, a creative agency.",
+        link: "https://redfox.com",
+        images: [redfox],
+        category: "Websites",
+      },
+      // {
+      //   name: "Rocason website",
+      //   description: "An app website for Rocason.",
+      //   link: "https://rocason.com",
+      //   images: [rocason],
+      //   category: "Apps",
+      // },
     ];
 
-    const filteredDesigns = selectedCategory === 'All' ? designs : designs.filter(design => design.category === selectedCategory);
+    const filteredDesigns =
+      selectedCategory === "All"
+        ? designs
+        : designs.filter((design) => design.category === selectedCategory);
 
     return filteredDesigns.map((design, index) => (
-      <div key={index} className="flex flex-col items-center justify-center">
-        <div className="flex flex-col md:flex-row items-center  justify-center gap-4 md:gap-7">
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center mb-8"
+      >
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-7">
           {design.images.map((image, i) => (
-            <div key={i}>
+            <div key={i} className="relative group">
               <img
-                className="rounded-xl border-2 w-[500px] h-[350px] mb-4 md:w-[350px] md:h-[250px] md:mb-7"
+                className="rounded-xl border-2 w-[500px] h-[450px] mb-4 md:w-[350px] md:h-[300px] md:mb-7"
                 src={image}
                 alt={`${design.name} ${i + 1}`}
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex flex-col justify-end p-4">
+                <h2 className="text-white text-lg font-bold">{design.name}</h2>
+                <p className="text-white mb-2">{design.description}</p>
+                <a
+                  href={design.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white flex items-center"
+                >
+                  <span className="mr-2">Visit</span>
+                  <MdArrowOutward size={20} />
+                </a>
+              </div>
             </div>
           ))}
         </div>
-        {/* <p>Category: {design.category}</p> */}
-        {/* Render design details */}
       </div>
     ));
-}
+  };
+
   return (
-    <section className="w-full h-full mx-auto max-w-[1440px] font-sans p-8 sm:px-12 lg:px-24">
+    <section className="w-full h-full max-w-[1440px] mx-auto font-sans px-5 py-6 md:py-12 xs:px-10 sm:px-16 md:px-20 lg:px-28">
       <div className="container flex flex-col justify-evenly">
         <div className="text-center mb-10">
-          <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-500">
-            My Quality Works
+          <h1 className="text-3xl mt-10 font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-500">
+            My Recent Works
           </h1>
           <p className="mt-5 max-w-[500px] md:max-w-[820px] text-gray-800 mx-auto">
             We put your ideas and thus your wishes in the form of a unique web
@@ -95,7 +117,7 @@ const Works = () => {
               </a>
             </ul>
           </div>
-          <div className="">{renderDesigns()}</div>
+          <div>{renderDesigns()}</div>
         </div>
       </div>
     </section>
@@ -103,3 +125,5 @@ const Works = () => {
 };
 
 export default Works;
+
+

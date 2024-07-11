@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const NavLayout = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,22 +39,17 @@ const NavLayout = () => {
             <a href="#">Contact</a>
           </li>
         </ul>
-        <button className="bg-gradient-to-r from-blue-500 to-gray-900 text-white font-bold py-2 px-6 rounded-full whitespace-nowrap">
-          Hire Me!
-        </button>
       </div>
       <div className="lg:hidden flex items-center space-x-4 text-blue-500">
         <button className="bg-gradient-to-r from-blue-500 to-gray-900 text-white font-bold py-2 px-6 rounded-full whitespace-nowrap">
           Hire Me!
         </button>
         <button onClick={toggleMenu} className="focus:outline-none">
-          <svg className="h-8 w-8" viewBox="0 0 24 24">
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm16 4H4v2h16v-2z"
-            />
-          </svg>
+          {isOpen ? (
+            <FaTimes className="h-8 w-8" />
+          ) : (
+            <FaBars className="h-8 w-8" />
+          )}
         </button>
       </div>
       <div
@@ -81,9 +77,7 @@ const NavLayout = () => {
             <a href="#">Contact</a>
           </li>
         </ul>
-        <button className="bg-gradient-to-r from-blue-500 to-gray-900 text-white font-bold py-2 px-6 rounded-full whitespace-nowrap">
-          Hire Me!
-        </button>
+
       </div>
     </nav>
   );
