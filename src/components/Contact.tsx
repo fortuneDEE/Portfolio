@@ -3,6 +3,12 @@ import { GoMail } from "react-icons/go";
 import { SlLocationPin } from "react-icons/sl";
 
 const ContactSection: React.FC = () => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    // Handle form submission logic here
+    console.log("Form submitted!");
+  };
+  
   return (
    <section className="w-full bg-blue-50 font-sans max-w-[1440px] py-16 lg:mx-auto p-8 md:p-12 lg:p-16 xl:p-20">
       <div className="flex flex-col md:flex-row-reverse items-center">
@@ -42,7 +48,7 @@ const ContactSection: React.FC = () => {
           </div>
         </div>
         <div className="w-full lg:w-1/2">
-          <form className="rounded-xl bg-white shadow-lg p-8">
+          <form onSubmit={handleSubmit} className="rounded-xl bg-white shadow-lg p-8">
             <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900 text-2xl font-bold mb-4">
               Let's Work Together!
             </h1>

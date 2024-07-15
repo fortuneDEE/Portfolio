@@ -1,9 +1,8 @@
-import  { useState } from "react";
+import { useState } from "react";
 import phasecurve from "/phasecurve.png";
-import phasecurve1 from '/phasecurve1.png'
+import phasecurve1 from "/phasecurve1.png";
 import redfox from "/redfox.png";
 import { MdArrowOutward } from "react-icons/md";
-
 
 const Works = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -28,13 +27,6 @@ const Works = () => {
         images: [redfox],
         category: "Websites",
       },
-      // {
-      //   name: "Rocason website",
-      //   description: "An app website for Rocason.",
-      //   link: "https://rocason.com",
-      //   images: [rocason],
-      //   category: "Apps",
-      // },
     ];
 
     const filteredDesigns =
@@ -45,31 +37,27 @@ const Works = () => {
     return filteredDesigns.map((design, index) => (
       <div
         key={index}
-        className="flex flex-col items-center justify-center mb-8"
+        className="flex flex-col items-center justify-center mb-8 w-full md:w-1/2 lg:w-1/3 p-4"
       >
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-7">
-          {design.images.map((image, i) => (
-            <div key={i} className="relative group">
-              <img
-                className="rounded-xl border-2 w-[500px] h-[450px] mb-4 md:w-[350px] md:h-[300px] md:mb-7"
-                src={image}
-                alt={`${design.name} ${i + 1}`}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex flex-col justify-end p-4">
-                <h2 className="text-white text-lg font-bold">{design.name}</h2>
-                <p className="text-white mb-2">{design.description}</p>
-                <a
-                  href={design.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white flex items-center"
-                >
-                  <span className="mr-2">Visit</span>
-                  <MdArrowOutward size={20} />
-                </a>
-              </div>
-            </div>
-          ))}
+        <div className="relative group">
+          <img
+            className="rounded-xl border-2 w-full h-[300px] object-cover"
+            src={design.images[0]}
+            alt={`${design.name} ${index + 1}`}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex flex-col justify-end p-4">
+            <h2 className="text-white text-lg font-bold">{design.name}</h2>
+            <p className="text-white mb-2">{design.description}</p>
+            <a
+              href={design.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white flex items-center"
+            >
+              <span className="mr-2">Visit</span>
+              <MdArrowOutward size={20} />
+            </a>
+          </div>
         </div>
       </div>
     ));
@@ -90,34 +78,35 @@ const Works = () => {
         <div>
           <div className="flex mb-9 justify-center">
             <ul className="flex items-center bg-gray-100 px-3 rounded-xl space-x-2">
-              <a
+              <li
                 className={`cursor-pointer p-2 rounded-xl text-blue-500 ${
                   selectedCategory === "All" ? "bg-blue-500 text-white" : ""
                 }`}
+                onClick={() => handleCategorySelect("All")}
               >
-                <li onClick={() => handleCategorySelect("All")}>All</li>
-              </a>
-              <a
+                All
+              </li>
+              <li
                 className={`cursor-pointer p-2 rounded-xl text-blue-500 ${
                   selectedCategory === "Websites"
                     ? "bg-blue-500 text-white"
                     : ""
                 }`}
+                onClick={() => handleCategorySelect("Websites")}
               >
-                <li onClick={() => handleCategorySelect("Websites")}>
-                  Websites
-                </li>
-              </a>
-              <a
+                Websites
+              </li>
+              <li
                 className={`cursor-pointer p-2 rounded-xl text-blue-500 ${
                   selectedCategory === "Apps" ? "bg-blue-500 text-white" : ""
                 }`}
+                onClick={() => handleCategorySelect("Apps")}
               >
-                <li onClick={() => handleCategorySelect("Apps")}>Apps</li>
-              </a>
+                Apps
+              </li>
             </ul>
           </div>
-          <div>{renderDesigns()}</div>
+          <div className="flex flex-wrap justify-center">{renderDesigns()}</div>
         </div>
       </div>
     </section>
@@ -125,5 +114,3 @@ const Works = () => {
 };
 
 export default Works;
-
-
