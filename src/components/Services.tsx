@@ -13,9 +13,9 @@ interface ServiceItemProps {
 const services = [
   {
     number: "01",
-    title: "Branding Design",
+    title: "Technical Support",
     description:
-      "I break down complex user experience problems thus your wishes in the form of a unique web project that inspires you",
+      "I conduct routine checks and your software and manage email accounts and troubleshoot any issues.",
   },
   {
     number: "02",
@@ -27,7 +27,7 @@ const services = [
     number: "03",
     title: "SEO Optimization",
     description:
-      "Our SEO strategies ensure your website ranks high in search results.",
+      "My SEO strategies ensure your website ranks high in search results.",
   },
 ];
 
@@ -46,15 +46,15 @@ export default function MyComponent() {
   };
 
   return (
-    <section className="bg-blue-50 w-full h-full max-w-[1440px] mx-auto font-sans px-5 py-6 md:py-12 xs:px-10 sm:px-16 md:px-20 lg:px-28">
+    <section id="services" className="bg-blue-50 w-full h-full max-w-[1440px] mx-auto font-sans px-5 py-6 md:py-12 xs:px-10 sm:px-16 md:px-20 lg:px-28">
       <div className="container flex flex-col items-center mx-auto px-6 mb-14">
         <div className="text-center my-10">
           <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-500">
-            My Quality Services
+            My Services
           </h1>
           <p className="mt-4 text-gray-800 text-[18px] max-w-[650px]">
             We put your ideas and thus your wishes in the form of a unique web
-            project that inspires you
+            project that inspires you.
           </p>
         </div>
 
@@ -134,7 +134,7 @@ const Modal: React.FC<{
               <li key={index}>{s.title}</li>
             ))}
         </ul>
-        <h3 className="text-lg font-semibold mb-2">Get in Touch</h3>
+        <h3 className="text-lg font-semibold mb-2">Get in Touch with me</h3>
         <form>
           <div className="mb-4">
             <label className="block text-sm font-medium mb-1" htmlFor="name">
@@ -149,7 +149,7 @@ const Modal: React.FC<{
           </div>
           <div className="mb-4">
             <label className="block text-sm font-medium mb-1" htmlFor="message">
-              Message
+              Send me a message
             </label>
             <textarea
               className="w-full border border-gray-300 p-2 rounded"

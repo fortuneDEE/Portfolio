@@ -12,21 +12,23 @@ const Landing = () => {
     <section className="w-full h-full max-w-[1440px] mx-auto font-sans px-5 py-6 md:py-12 xs:px-10 sm:px-16 md:px-20 lg:px-28">
       <div className="flex flex-col md:flex-row lg:mb-8 md:items-start">
         <div className="flex-1 md:mr-8">
-          <h1 className="text-4xl lg:text-5xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900 mb-4">
+          <h1 className="text-4xl lg:text-5xl font-bold leading-relaxed text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900 mb-4">
             <span className="text-gray-700 text-xl block mb-2">
               I am Fortune
             </span>
-            Web Developer + <br /> Scrum Master
+            Web Developer + <br /> Technical Support Specialist
           </h1>
           <p className="text-xl hidden md:block md:text-lg text-gray-700 mb-6 md:mb-8">
             I break down complex problems to create user-centric solutions that
             connect billions of people.
           </p>
           <div className="hidden md:block mb-8">
-            <button className="border-blue-500 border-2 flex items-center text-blue-500 px-6 py-3 rounded-full font-medium text-base hover:bg-blue-500 hover:text-white transform hover:scale-110 transition duration-300 ease-in-out mb-6">
-              Download CV
-              <FiDownload className="mx-2" />
-            </button>
+            <a href="/CV.pdf" download>
+              <button className="border-blue-500 border-2 flex items-center text-blue-500 px-6 py-3 rounded-full font-medium text-base hover:bg-blue-500 hover:text-white transform hover:scale-110 transition duration-300 ease-in-out mb-6">
+                Download CV
+                <FiDownload className="mx-2" />
+              </button>
+            </a>
             <div className="flex items-center space-x-4 ">
               <a
                 href="https://twitter.com/fortune_ellah"
@@ -117,31 +119,31 @@ const Landing = () => {
       </div>
       <div className="grid w-[70%] lg:w-full mx-auto grid-cols-2 lg:grid-cols-4 gap-8 mb-6">
         <div className="text-blue-500 sm:flex-row flex flex-col space-x-3">
-          <h2 className="text-5xl font-bold">14</h2>
+          <h2 className="text-5xl font-bold">4</h2>
           <p className="text-base mb-4 leading-tight">
             Years of <br />
             experience
           </p>
         </div>
         <div className="text-blue-500 sm:flex-row flex flex-col space-x-3">
-          <h2 className="text-5xl font-bold">50+</h2>
+          <h2 className="text-5xl font-bold">5+</h2>
           <p className="text-base mb-3 leading-tight">
             Projects <br />
             completed
           </p>
         </div>
         <div className="text-blue-500 sm:flex-row flex flex-col space-x-3">
-          <h2 className="text-5xl font-bold">1.5K</h2>
+          <h2 className="text-5xl font-bold">10+</h2>
           <p className="text-base mb-4 leading-tight">
             Happy <br />
             Clients
           </p>
         </div>
         <div className="text-blue-500 sm:flex-row flex flex-col space-x-3">
-          <h2 className="text-5xl font-bold">14</h2>
+          <h2 className="text-5xl font-bold">5+</h2>
           <p className="text-base mb-4 leading-tight">
-            Years of <br />
-            experience
+            Skills <br />
+            Aquired
           </p>
         </div>
       </div>

@@ -21,32 +21,36 @@ const NavLayout = () => {
       <div className="hidden lg:flex items-center space-x-6">
         <ul className="flex space-x-6 text-gray-600">
           <li>
-            <a href="#">Services</a>
+            <a href="#services">Services</a>
           </li>
           <li>
-            <a href="#">Works</a>
+            <a href="#works">Works</a>
           </li>
           <li>
-            <a href="#">Resume</a>
+            <a href="#resume">Resume</a>
           </li>
           <li>
-            <a href="#">Skills</a>
+            <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="#">Testimonials</a>
+            <a href="#testimonials">Testimonials</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
-        <button className="bg-gradient-to-r from-blue-500 to-gray-900 text-white font-bold py-2 px-6 rounded-full whitespace-nowrap">
-          Hire Me!
-        </button>
+        <a href="#contact">
+          <button className="bg-gradient-to-r from-blue-500 to-gray-900 text-white font-bold py-2 px-6 rounded-full whitespace-nowrap">
+            Hire Me!
+          </button>
+        </a>
       </div>
       <div className="lg:hidden flex items-center space-x-4 text-blue-500">
+      <a href="#contact">
         <button className="bg-gradient-to-r from-blue-500 to-gray-900 text-white font-bold py-2 px-6 rounded-full whitespace-nowrap">
           Hire Me!
         </button>
+      </a>
         <button onClick={toggleMenu} className="focus:outline-none">
           {isOpen ? (
             <FaTimes className="h-8 w-8" />
@@ -62,22 +66,34 @@ const NavLayout = () => {
       >
         <ul className="flex flex-col space-y-4 w-full">
           <li>
-            <a href="#">Services</a>
+            <a href="#services" onClick={toggleMenu}>
+              Services
+            </a>
           </li>
           <li>
-            <a href="#">Works</a>
+            <a href="#works" onClick={toggleMenu}>
+              Works
+            </a>
           </li>
           <li>
-            <a href="#">Resume</a>
+            <a href="#resume" onClick={toggleMenu}>
+              Resume
+            </a>
           </li>
           <li>
-            <a href="#">Skills</a>
+            <a href="#skills" onClick={toggleMenu}>
+              Skills
+            </a>
           </li>
           <li>
-            <a href="#">Testimonials</a>
+            <a href="#testimonials" onClick={toggleMenu}>
+              Testimonials
+            </a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#contact" onClick={toggleMenu}>
+              Contact
+            </a>
           </li>
         </ul>
       </div>

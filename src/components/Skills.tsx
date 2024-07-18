@@ -1,24 +1,23 @@
 import { FaReact, FaJs, FaWordpress, FaCss3Alt, FaCloud, FaGitAlt } from "react-icons/fa";
 
   const skills = [
-    { name: "React", icon: FaReact, percentage: "55%" },
-    { name: "JavaScript", icon: FaJs, percentage: "65%" },
+    { name: "React", icon: FaReact, percentage: "85%" },
+    { name: "JavaScript", icon: FaJs, percentage: "80%" },
     { name: "WordPress (PHP)", icon: FaWordpress, percentage: "85%" },
     { name: "TailwindCSS", icon: FaCss3Alt, percentage: "85%" },
     { name: "Microsoft Azure", icon: FaCloud, percentage: "55%" },
-    { name: "Git", icon: FaGitAlt, percentage: "75%" },
+    { name: "Next", icon: FaGitAlt, percentage: "75%" },
   ];
 const Skills = () => {
   return (
-    <section className="w-full h-full max-w-[1440px] font-sans py-12 px-6 md:px-12 lg:px-24">
+    <section id="skills" className="w-full h-full max-w-[1440px] font-sans py-12 px-6 md:px-12 lg:px-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900">
             My Skills
           </h1>
           <p className="mt-5 max-w-[500px] md:max-w-[820px] text-gray-800 mx-auto">
-            We put your ideas and thus your wishes in the form of a unique web
-            project that inspires you
+            Here's a list of a few of my top skills.
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

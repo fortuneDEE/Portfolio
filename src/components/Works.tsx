@@ -64,7 +64,7 @@ const Works = () => {
   };
 
   return (
-    <section className="w-full h-full max-w-[1440px] mx-auto font-sans px-5 py-6 md:py-12 xs:px-10 sm:px-16 md:px-20 lg:px-28">
+    <section id="works" className="w-full h-full max-w-[1440px] mx-auto font-sans px-5 py-6 md:py-12 xs:px-10 sm:px-16 md:px-20 lg:px-28">
       <div className="container flex flex-col justify-evenly">
         <div className="text-center mb-10">
           <h1 className="text-3xl mt-10 font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-500">

@@ -3,7 +3,10 @@ import { FaBriefcase } from "react-icons/fa";
 
 const Resume = () => {
   return (
-    <section className="w-full h-full max-w-[1440px] bg-blue-50 font-sans py-12 px-6 md:px-12 lg:px-24">
+    <section
+      id="resume"
+      className="w-full h-full max-w-[1440px] bg-blue-50 font-sans py-12 px-6 md:px-12 lg:px-24"
+    >
       <div className="flex flex-col md:flex-row gap-6 sm:px-16 md:px-0 mx-auto">
         {/* Experience Section */}
         <div className="mb-8 w-full">
@@ -14,24 +17,24 @@ const Resume = () => {
           <div>
             <div className="flex p-5 flex-col bg-white w-full rounded-3xl hover:bg-blue-800 hover:text-white mb-5 shadow-lg transition duration-300">
               <h3 className="text-blue-500 mb-1 font-sans font-bold text-lg group-hover:text-white">
-                2022 - Present
+                2023 - Present
+              </h3>
+              <h2 className="uppercase font-bold">Technical Support Specialist</h2>
+              <p className="text-sm">Laygos Watercrafts</p>
+            </div>
+            <div className="flex p-5 flex-col bg-white rounded-3xl hover:bg-blue-800 hover:text-white mb-5 shadow-lg transition duration-300">
+              <h3 className="text-blue-500 mb-1 font-sans font-bold text-lg group-hover:text-white">
+                2022 - 2023
               </h3>
               <h2 className="uppercase font-bold">Frontend Developer</h2>
               <p className="text-sm">Phasecurve Technologies Ltd</p>
             </div>
             <div className="flex p-5 flex-col bg-white rounded-3xl hover:bg-blue-800 hover:text-white mb-5 shadow-lg transition duration-300">
               <h3 className="text-blue-500 mb-1 font-sans font-bold text-lg group-hover:text-white">
-                2021 - 2022
-              </h3>
-              <h2 className="uppercase font-bold">UI/UX Designer</h2>
-              <p className="text-sm">Design Studio</p>
-            </div>
-            <div className="flex p-5 flex-col bg-white rounded-3xl hover:bg-blue-800 hover:text-white mb-5 shadow-lg transition duration-300">
-              <h3 className="text-blue-500 mb-1 font-sans font-bold text-lg group-hover:text-white">
                 2019 - 2021
               </h3>
               <h2 className="uppercase font-bold">Junior Developer</h2>
-              <p className="text-sm">Tech Corp</p>
+              <p className="text-sm">Tech4Dev</p>
             </div>
           </div>
         </div>
@@ -45,26 +48,26 @@ const Resume = () => {
           <div>
             <div className="flex p-5 flex-col bg-white rounded-3xl hover:bg-blue-800 hover:text-white mb-5 shadow-lg transition duration-300">
               <h3 className="text-blue-500 mb-1 font-sans font-bold text-lg group-hover:text-white">
-                2018 - 2022
+                2013 - 2019
               </h3>
-              <h2 className="uppercase font-bold">B.Sc. in Computer Science</h2>
-              <p className="text-sm">University of Technology</p>
+              <h2 className="uppercase font-bold">B.Tech in Chemical Engineering</h2>
+              <p className="text-sm">Rivers State University of Science & Technology</p>
             </div>
             <div className="flex p-5 flex-col bg-white rounded-3xl hover:bg-blue-800 hover:text-white mb-5 shadow-lg transition duration-300">
               <h3 className="text-blue-500 mb-1 font-sans font-bold text-lg group-hover:text-white">
-                2016 - 2018
+                2022 - 2023
               </h3>
               <h2 className="uppercase font-bold">
-                Diploma in Web Development
+                React Learning Program
               </h2>
-              <p className="text-sm">Tech Institute</p>
+              <p className="text-sm">Andela</p>
             </div>
             <div className="flex p-5 flex-col bg-white rounded-3xl hover:bg-blue-800 hover:text-white mb-5 shadow-lg transition duration-300">
               <h3 className="text-blue-500 mb-1 font-sans font-bold text-lg group-hover:text-white">
-                2014 - 2016
+                2007 - 2012
               </h3>
               <h2 className="uppercase font-bold">High School</h2>
-              <p className="text-sm">City High School</p>
+              <p className="text-sm">Kings & Queens High School</p>
             </div>
           </div>
         </div>

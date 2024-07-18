@@ -52,7 +52,7 @@ const Footer = () => {
       </div>
       <div className="flex space-x-6 mb-6">
         <a
-          href="https://twitter.com"
+          href="https://twitter.com/fortune_ellah"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-blue-400 transition-colors"
@@ -60,7 +60,7 @@ const Footer = () => {
           <FaTwitter size={24} />
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/fortune-ellah/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-blue-400 transition-colors"
@@ -68,7 +68,7 @@ const Footer = () => {
           <FaLinkedin size={24} />
         </a>
         <a
-          href="https://github.com"
+          href="https://github.com/fortuneDEE"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-blue-400 transition-colors"
@@ -76,7 +76,7 @@ const Footer = () => {
           <FaGithub size={24} />
         </a>
         <a
-          href="mailto:someone@example.com"
+          href="mailto:ellfortune3@gmail.com"
           className="text-white hover:text-blue-400 transition-colors"
         >
           <FaEnvelope size={24} />
