@@ -4,15 +4,23 @@ import phasecurve1 from "/phasecurve1.png";
 import redfox from "/redfox.png";
 import { MdArrowOutward } from "react-icons/md";
 
+interface Design {
+  name: string;
+  description: string;
+  link: string;
+  images: string[];
+  category: string;
+}
+
 const Works = () => {
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState<string>("All");
 
   const handleCategorySelect = (category: string) => {
     setSelectedCategory(category);
   };
 
   const renderDesigns = () => {
-    const designs = [
+    const designs: Design[] = [
       {
         name: "Phasecurve Technologies website",
         description: "A technology website showcasing services and products.",
@@ -39,20 +47,20 @@ const Works = () => {
         key={index}
         className="flex flex-col items-center justify-center mb-8 w-full md:w-1/2 lg:w-1/3 p-4"
       >
-        <div className="relative group">
+        <div className="bg-white shadow-md rounded-xl overflow-hidden">
           <img
-            className="rounded-xl border-2 w-full h-[300px] object-cover"
+            className="w-full h-48 object-cover"
             src={design.images[0]}
             alt={`${design.name} ${index + 1}`}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex flex-col justify-end p-4">
-            <h2 className="text-white text-lg font-bold">{design.name}</h2>
-            <p className="text-white mb-2">{design.description}</p>
+          <div className="p-4">
+            <h2 className="text-lg font-bold mb-2">{design.name}</h2>
+            <p className="text-gray-700 mb-4">{design.description}</p>
             <a
               href={design.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white flex items-center"
+              className="text-blue-500 flex items-center"
             >
               <span className="mr-2">Visit</span>
               <MdArrowOutward size={20} />
@@ -64,11 +72,14 @@ const Works = () => {
   };
 
   return (
-    <section id="works" className="w-full h-full max-w-[1440px] mx-auto font-sans px-5 py-6 md:py-12 xs:px-10 sm:px-16 md:px-20 lg:px-28">
+    <section
+      id="works"
+      className="w-full h-full max-w-[1440px] mx-auto font-sans px-5 py-6 md:py-12 xs:px-10 sm:px-16 md:px-20 lg:px-28"
+    >
       <div className="container flex flex-col justify-evenly">
         <div className="text-center mb-10">
           <h1 className="text-3xl mt-10 font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-500">
-            My Recent Works
+            My Recent Works 
           </h1>
           <p className="mt-5 max-w-[500px] md:max-w-[820px] text-gray-800 mx-auto">
             We put your ideas and thus your wishes in the form of a unique web

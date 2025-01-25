@@ -3,7 +3,7 @@ import { FaTwitter, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="flex w-full h-[30vh] flex-col items-center max-w-[1440px] justify-center bg-blue-950 mx-auto pt-10 px-6 sm:px-12 lg:px-24">
+    <footer className="flex w-full  flex-col items-center max-w-[1440px] justify-center bg-blue-950 mx-auto pt-10 px-6 sm:px-12 lg:px-24">
       <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 mb-8">
         ChikaDev
       </div>
@@ -82,11 +82,9 @@ const Footer = () => {
           <FaEnvelope size={24} />
         </a>
       </div>
-      <div>
-        <p className="text-blue-400 text-sm">
+        <small className="text-white text-xs mt-4">
           &copy; 2024 All rights reserved by <b>Ellah Fortune</b>
-        </p>
-      </div>
+        </small>
     </footer>
   );
 };

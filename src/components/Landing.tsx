@@ -12,11 +12,11 @@ const Landing = () => {
     <section className="w-full h-full max-w-[1440px] mx-auto font-sans px-5 py-6 md:py-12 xs:px-10 sm:px-16 md:px-20 lg:px-28">
       <div className="flex flex-col md:flex-row lg:mb-8 md:items-start">
         <div className="flex-1 md:mr-8">
-          <h1 className="text-4xl lg:text-5xl font-bold leading-relaxed text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900 mb-4">
-            <span className="text-gray-700 text-xl block mb-2">
+          <h1 className="text-3xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-900 mb-4">
+            <span className="text-gray-700 font-thin text-xl block mb-2">
               I am Fortune
             </span>
-            Web Developer + <br /> Technical Support Specialist
+            Web Developer + <br /> Technical Support <br /> Specialist
           </h1>
           <p className="text-xl hidden md:block md:text-lg text-gray-700 mb-6 md:mb-8">
             I break down complex problems to create user-centric solutions that
@@ -117,31 +117,31 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <div className="grid w-[70%] lg:w-full mx-auto grid-cols-2 lg:grid-cols-4 gap-8 mb-6">
-        <div className="text-blue-500 sm:flex-row flex flex-col space-x-3">
-          <h2 className="text-5xl font-bold">4</h2>
-          <p className="text-base mb-4 leading-tight">
+      <div className="grid w-[70%] lg:w-full mx-auto grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="text-blue-500 sm:flex-row flex flex-col space-x-3 items-center justify-center">
+          <h2 className="text-5xl font-bold">4+</h2>
+          <p className="text-base leading-tight">
             Years of <br />
             experience
           </p>
         </div>
-        <div className="text-blue-500 sm:flex-row flex flex-col space-x-3">
+        <div className="text-blue-500 sm:flex-row flex flex-col space-x-3 items-center justify-center">
           <h2 className="text-5xl font-bold">5+</h2>
-          <p className="text-base mb-3 leading-tight">
+          <p className="text-base  leading-tight">
             Projects <br />
             completed
           </p>
         </div>
-        <div className="text-blue-500 sm:flex-row flex flex-col space-x-3">
+        <div className="text-blue-500 sm:flex-row flex flex-col space-x-3 items-center justify-center">
           <h2 className="text-5xl font-bold">10+</h2>
-          <p className="text-base mb-4 leading-tight">
-            Happy <br />
+          <p className="text-base leading-tight">
+            Satisfied <br />
             Clients
           </p>
         </div>
-        <div className="text-blue-500 sm:flex-row flex flex-col space-x-3">
+        <div className="text-blue-500 sm:flex-row flex flex-col space-x-3 items-center justify-center">
           <h2 className="text-5xl font-bold">5+</h2>
-          <p className="text-base mb-4 leading-tight">
+          <p className="text-base leading-tight">
             Skills <br />
             Aquired
           </p>
